@@ -50,7 +50,7 @@ export const register = async (req, res, next) => {
       resetTokenExpiration: Date.now() + 3600000,
     });
 
-    const resetLink = `http://astrodunia.in/#/verify-email/${resetToken}`;
+    const resetLink = `http://13.233.199.239/#/verify-email/${resetToken}`;
 
     const subject = "Please verify your email address";
 
@@ -204,7 +204,7 @@ export const forgetPassword = async (req, res, next) => {
     userExist.resetTokenExpiration = Date.now() + 3600000;
     await userExist.save();
 
-    const resetLink = `http://astrodunia.in/#/reset-password/${resetToken}`;
+    const resetLink = `http://13.233.199.239/#/reset-password/${resetToken}`;
 
     const subject = "Reset your password ";
 
